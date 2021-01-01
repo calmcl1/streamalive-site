@@ -1,0 +1,138 @@
+:root{
+    --hero-text-colour: #eeeeee
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.fullheight{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.hero-fullheight{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('/img/audio-3153963_1920.jpg');
+    background-size: cover;
+}
+
+.hero-fullheight > .hero-top
+{
+width: 100%;
+}
+.hero-fullheight > .hero-middle
+{
+    color:var(--hero-text-colour);
+    text-shadow: #1f1f1f 2px 2px 7px;
+    text-align: center;
+}
+
+.fullheight .next-page-link
+{
+    display: inline-flex;
+    justify-content: space-between;
+    width:100%;
+    padding:1em;
+}
+
+.fullheight .next-page-link > *{
+    width:33%;
+    color:var(--hero-text-colour);
+    text-shadow: #333 2px 2px 7px;
+}
+
+.fullheight .next-page-link >.down-arrow{
+    font-size: 4em;
+    color: rgb(72, 173, 255);
+    text-align: center;
+}
+
+.fullheight .next-page-link > .photo-cred{
+    text-align: right;
+    float:right
+}
+
+#what-we-do{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image:url('/img/server-1235959_1920_desat.jpg');
+    background-size: cover;
+    text-align: center;
+}
+
+.fullheight >.content{
+color: var(--hero-text-colour);
+    width:60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    text-shadow: #1f1f1f 2px 2px 7px;
+    text-align: center;
+}
+
+.fullheight > h2{
+    padding:2em;
+}
+
+.fullheight >.content> .description{
+    text-align: center;
+    }
+
+#pricing{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image:url('/img/mixer-226180_1920_desat.jpg');
+    background-size: cover;
+    text-align: center;
+}
+
+#pricing .tiers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-shadow: none;
+}
+
+#pricing .tiers .tier {
+    /* background-color: rgb(82, 54, 238); */
+    margin: 5px;
+    /* padding: 5px; */
+    border-radius: .5rem;
+    box-shadow: #888 0 0 7px;
+}
+
+#pricing .tiers .tier ul{
+text-align: left;
+margin-top: 2rem;
+}
+
+#pricing .tiers .tier .h5{
+    margin-bottom: 2rem;
+}
+
+#contact{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image:url('/img/mixer-2010270_1920_desat.jpg');
+    background-size: cover;
+    text-align: center;
+}
+
+.top-bar{
+    background-color: #ffffffa3;
+}
+
+.menu,.top-bar ul{
+    background: transparent;
+}
