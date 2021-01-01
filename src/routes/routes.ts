@@ -12,7 +12,7 @@ r.post('/',
         axios.post("https://api.sendgrid.com/v3/contactdb/recipients",
             { email: req.body.email_address },
             {
-                headers: { "Authorization": "Bearer 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" }
+                headers: { "Authorization": `Bearer ${process.env.SENDGRID_KEY}` }
             })
             .then(() => { res.render("index", { has_signed_up: true }) })
             .catch(e => {
