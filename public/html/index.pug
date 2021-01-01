@@ -6,7 +6,10 @@ html(lang="en").no-js
         meta(property="og:title", content="StreamAlive - Know immediately when your web stream stops working.")
         meta(property="og:url" content="https://streamalive.co.uk")
         meta(property="og:description" content="Constant monitoring for your audio web stream. Instant notification when it's offline.")
+        meta(name="description" content="Constant monitoring for your audio web stream. Instant notification when it's offline.")
         meta(property="og:locale" content="en_GB")
+        meta(property="og:type" content="website")
+        meta(property="og:image" content="https://streamalive.co.uk/img/radio-2722271_640.jpg")
         title StreamAlive
         link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css", integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=", crossorigin="anonymous")
         link(rel="stylesheet", href="/css/foundation-icons.css")
@@ -42,6 +45,7 @@ html(lang="en").no-js
                 p.photo-cred Photo by #[a(href="https://pixabay.com/users/benjaminhartwich-3910743/", target="_blank") Benjamin Hartwich on Pixabay]
 
         section.fullheight#what-we-do
+            span.filler
             .content
                 h2 What We're Doing
                 p.h3 StreamAlive will continuously monitor your audio web stream in the cloud, and will alert you via email or SMS if your stream goes offline.
@@ -55,56 +59,63 @@ html(lang="en").no-js
                 p.photo-cred Photo by #[a(href="https://pixabay.com/users/colossuscloud-2086276/", target="_blank") ColossusCloud on Pixabay]
 
         section.fullheight#pricing
+            span.filler
             .content
                 h2 Pricing
                 p.h3 We're planning a tiered pricing scheme:
-                .tiers
-                    .tier.card
-                        h4.card-divider Free
-                        .card-section
-                            span.h5 £0/mo
-                            ul
-                                li 1 stream
-                                li Uptime checked hourly
-                                li 1 month of historical uptime data
-                                li Email notifications
-                                li No API access
-                    .tier.card
-                        h4.card-divider Basic
-                        .card-section
-                            span.h5 £5/mo
-                            ul
-                                li 3 streams
-                                li Uptime checked each minute
-                                li 6 months of historical uptime data
-                                li Email notifications
-                                li API access
-                    .tier.card
-                        h4.card-divider Pro
-                        .card-section
-                            span.h5 £9/mo
-                            ul
-                                li 5 streams
-                                li Uptime checked each minute
-                                li 1 year of historical uptime data
-                                li Email and SMS notifications
-                                li API access
-                    .tier.card
-                        h4.card-divider Super
-                        .card-section
-                            span.h5 £13/mo
-                            ul
-                                li Unlimited streams
-                                li Continuous checking
-                                li Unlimited historical uptime data
-                                li Email and SMS notifications
-                                li API access
+                .grid-container.full
+                    .grid-x.grid-padding-x
+                        .cell.medium-auto
+                            .tier.card
+                                h4.card-divider Free
+                                .card-section
+                                    span.h5 £0/mo
+                                    ul
+                                        li 1 stream
+                                        li Uptime checked hourly
+                                        li 1 month of historical uptime data
+                                        li Email notifications
+                                        li No API access                
+                        .cell.medium-auto
+                            .tier.card
+                                h4.card-divider Basic
+                                .card-section
+                                    span.h5 £5/mo
+                                    ul
+                                        li 3 streams
+                                        li Uptime checked each minute
+                                        li 6 months of historical uptime data
+                                        li Email notifications
+                                        li API access
+                        .cell.medium-auto
+                            .tier.card
+                                h4.card-divider Pro
+                                .card-section
+                                    span.h5 £9/mo
+                                    ul
+                                        li 5 streams
+                                        li Uptime checked each minute
+                                        li 1 year of historical uptime data
+                                        li Email and SMS notifications
+                                        li API access
+                        .cell.medium-auto
+                            .tier.card
+                                h4.card-divider Super
+                                .card-section
+                                    span.h5 £13/mo
+                                    ul
+                                        li Unlimited streams
+                                        li Continuous checking
+                                        li Unlimited historical uptime data
+                                        li Email and SMS notifications
+                                        li API access
             .next-page-link
                 p
                 a(href="#contact",data-smooth-scroll).fi-arrow-down.down-arrow
                 p.photo-cred Photo by #[a(href="https://pixabay.com/users/studiobmedia-4863023/", target="_blank") studiobmedia on Pixabay]
 
         section.fullheight#contact
+            span.filler
             .content
                 h2 Sound good? Join the mailing list.
                 p.h3 If you're interested in StreamAlive, sign up here and we'll let you know when it's ready.
